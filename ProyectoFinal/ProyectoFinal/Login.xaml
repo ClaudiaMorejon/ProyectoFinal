@@ -5,7 +5,7 @@
     <ContentPage.Content>
         <StackLayout>
 
-            <Label Text="Inicio de sesión"/>
+            <Label Text="Inicio de sesión PREOBANDO"/>
 
             <Entry x:Name="txtUsuario" 
                    Placeholder="Ingrese el usuario"/>
