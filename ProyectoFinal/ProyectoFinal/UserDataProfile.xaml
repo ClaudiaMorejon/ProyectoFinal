@@ -5,7 +5,7 @@
     <ContentPage.Content>
         <ScrollView>
            
-            <StackLayout Spacing="1" Padding="1" VerticalOptions="Center" HorizontalOptions="Fill" BackgroundColor="Beige">
+            <StackLayout Spacing="-4" Padding="-1" HorizontalOptions="Center" BackgroundColor="Beige">
 
                 <Label Text="Registro Usuarios" TextColor="Blue" FontSize="30" HorizontalOptions="Center"/>
                                
@@ -20,6 +20,9 @@
 
                 <Label Text="Apellido" FontSize="13"/>
                 <Entry Placeholder="Ingrese Apellido" x:Name="Apellido" FontSize="10"/>
+
+                <Label Text="Cedula" FontSize="13"/>
+                <Entry Placeholder="Ingrese Cedula" x:Name="Cedula" FontSize="10"/>
 
                 <Label Text="Celular" FontSize="13"/>
                 <Entry Placeholder="Numero Celular" x:Name="Celular" FontSize="10"/>
@@ -38,6 +41,24 @@
 
                 <Label Text="Genero" FontSize="13"/>
                 <Entry Placeholder="Genero" x:Name="Genero" FontSize="10"/>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition>
+                        </ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                <Button  Grid.Row="0" Grid.Column="0" Text="Guardar"
+                        x:Name="btnGuardar"
+                        Clicked="btnGuardar_Clicked"/>
+
+                <Button Grid.Row="0" Grid.Column="1" Text="Regresar"
+                        x:Name="btnRegresar"
+                        Clicked="btnRegresar_Clicked"/>
+                </Grid>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>
