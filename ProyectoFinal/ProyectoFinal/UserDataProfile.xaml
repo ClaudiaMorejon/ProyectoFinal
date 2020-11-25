@@ -4,37 +4,40 @@
              x:Class="ProyectoFinal.UserDataProfile">
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout Padding="20" Spacing="30" BackgroundColor="Beige">
+           
+            <StackLayout Spacing="1" Padding="1" VerticalOptions="Center" HorizontalOptions="Fill" BackgroundColor="Beige">
 
-                <Label Text="Id_Person" />
-                <Entry Placeholder="Ingresar Id_Person" x:Name="idPerson"/>
+                <Label Text="Registro Usuarios" TextColor="Blue" FontSize="30" HorizontalOptions="Center"/>
+                               
+                <Label Text="Id_Person" FontSize="13"/>
+                <Entry Placeholder="Ingresar Id_Person" x:Name="idPerson" FontSize="10" />
 
-                <Label Text="Id_User"/>
-                <Entry Placeholder="Ingrese Id_User" x:Name="idUser"/>
+                <Label Text="Id_User" FontSize="13"/>
+                <Entry Placeholder="Ingrese Id_User" x:Name="idUser" FontSize="10"/>
 
-                <Label Text="Nombre"/>
-                <Entry Placeholder="Ingrese Nombre" x:Name="Nombre"/>
+                <Label Text="Nombre" FontSize="13"/>
+                <Entry Placeholder="Ingrese Nombre" x:Name="Nombre" FontSize="10"/>
 
-                <Label Text="Apellido"/>
-                <Entry Placeholder="Ingrese Apellido" x:Name="Apellido"/>
+                <Label Text="Apellido" FontSize="13"/>
+                <Entry Placeholder="Ingrese Apellido" x:Name="Apellido" FontSize="10"/>
 
-                <Label Text="Celular"/>
-                <Entry Placeholder="Numero Celular" x:Name="Celular"/>
+                <Label Text="Celular" FontSize="13"/>
+                <Entry Placeholder="Numero Celular" x:Name="Celular" FontSize="10"/>
 
-                <Label Text="Convencional"/>
-                <Entry Placeholder="Convencional" x:Name="Convencional"/>
+                <Label Text="Convencional" FontSize="13"/>
+                <Entry Placeholder="Convencional" x:Name="Convencional" FontSize="10"/>
 
-                <Label Text="Direccion"/>
-                <Entry Placeholder="Direccion" x:Name="Direccion"/>
+                <Label Text="Direccion" FontSize="13"/>
+                <Entry Placeholder="Direccion" x:Name="Direccion" FontSize="10"/>
 
-                <Label Text="Ciudad"/>
-                <Entry Placeholder="Ciudad" x:Name="Ciudad"/>
+                <Label Text="Ciudad" FontSize="13"/>
+                <Entry Placeholder="Ciudad" x:Name="Ciudad" FontSize="10"/>
 
-                <Label Text="Imagen"/>
-                <Entry Placeholder="Foto" x:Name="Foto"/>
+                <Label Text="Imagen" FontSize="13"/>
+                <Entry Placeholder="Foto" x:Name="Foto" FontSize="10"/>
 
-                <Label Text="Genero"/>
-                <Entry Placeholder="Genero" x:Name="Genero"/>
+                <Label Text="Genero" FontSize="13"/>
+                <Entry Placeholder="Genero" x:Name="Genero" FontSize="10"/>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>
