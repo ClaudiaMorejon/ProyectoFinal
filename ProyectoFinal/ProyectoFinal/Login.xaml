@@ -17,6 +17,8 @@
 
             <Button x:Name="btnRegistrar" Text="Registrarse" Clicked="btnRegistrar_Clicked"/>
 
+            <Label Text="PRUEBA DE SINCRONIZACION"/>
+
 
 
         </StackLayout>
