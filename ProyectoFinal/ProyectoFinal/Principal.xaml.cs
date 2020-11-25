@@ -26,6 +26,41 @@ namespace ProyectoFinal
             
         }
 
+        protected async override void OnAppearing()
+        {
+            try
+            {
+                UserManager manager = new UserManager();
+                var result = await manager.listarMascotas();
+                if (result != null)
+                {
+                    lstPet.ItemsSource = result;
+                }
+
+            }catch(Exception ex)
+            {
+                await DisplayAlert("Error", ex.Message, "OK");
+            }
+            
+        }
+
+        void OnSelection(object sender, SelectedItemChangedEventArgs e)
+        {
+
+            try
+            {
+
+            }
+            catch (Exception)
+            {
+
+            }
+
+
+
+
+        }
+
         private async void btnIngresar_Clicked(object sender, EventArgs e)
         {
             try

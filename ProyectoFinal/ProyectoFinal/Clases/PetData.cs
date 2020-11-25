@@ -15,7 +15,7 @@ namespace ProyectoFinal.Clases
         public int size { get; set; }
         public string breed { get; set; }
         public string color { get; set; }
-        public byte picture { get; set; }
+        public string picture { get; set; }
         public int status { get; set; }
     }
 }
