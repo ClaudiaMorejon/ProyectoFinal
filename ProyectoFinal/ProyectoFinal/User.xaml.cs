@@ -31,7 +31,7 @@ namespace ProyectoFinal
                 var parametros = new System.Collections.Specialized.NameValueCollection();
                 parametros.Add("idUser", IdUser.Text);
                 parametros.Add("usuario", Usuario.Text);
-                parametros.Add("password", Password.Text)
+                parametros.Add("password", Password.Text);
 
                 UserProfile.UploadValues("http://134.209.220.83/proyecto/", "Post", parametros);
                 await DisplayAlert("Alerta", "Datos Ingresados", "Ok");
