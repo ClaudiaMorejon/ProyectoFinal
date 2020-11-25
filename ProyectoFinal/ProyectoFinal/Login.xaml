@@ -14,7 +14,7 @@
                    Placeholder="Ingrese la clave"
                    IsPassword="True"/>
 
-            <Button x:Name="btnIngresar" Text="Ingresar" Clicked="btnIngresar_Clicked"/>
+            <Button x:Name="btnIngresar" Text="Ingresar" Clicked="btnIngresar_Clicked" BackgroundColor="Cyan"/>
 
             <Button x:Name="btnRegistrar" Text="Registrarse" Clicked="btnRegistrar_Clicked"/>
 
