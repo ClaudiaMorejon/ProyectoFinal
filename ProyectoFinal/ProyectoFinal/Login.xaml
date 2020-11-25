@@ -5,7 +5,8 @@
     <ContentPage.Content>
         <StackLayout>
 
-            <Label Text="Inicio de sesión PREOBANDO"/>
+            <Image Source="https://dibujosfaciles-dehacer.com/wp-content/uploads/2017/12/dibujos-de-perros-para-ni%C3%B1os.jpg"/>
+            <Label Text="PET USER" HorizontalOptions="Center"/>
 
             <Entry x:Name="txtUsuario" 
                    Placeholder="Ingrese el usuario"/>
@@ -17,7 +18,7 @@
 
             <Button x:Name="btnRegistrar" Text="Registrarse" Clicked="btnRegistrar_Clicked"/>
 
-            <Label Text="PRUEBA DE SINCRONIZACION"/>
+         
 
 
 
