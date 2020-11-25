@@ -5,7 +5,7 @@
     <ContentPage.Content>
 
 
-        <ListView x:Name="lstPet" HasUnevenRows="True" ItemSelected="OnSelection">
+        <ListView x:Name="lstPet" HasUnevenRows="True" >
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>

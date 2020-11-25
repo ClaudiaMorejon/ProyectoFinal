@@ -44,24 +44,14 @@ namespace ProyectoFinal
             
         }
 
-        void OnSelection(object sender, SelectedItemChangedEventArgs e)
-        {
-
-            try
-            {
-
-            }
-            catch (Exception)
-            {
-
-            }
+       
 
 
 
 
         }
 
-        private async void btnIngresar_Clicked(object sender, EventArgs e)
+        /*private async void btnIngresar_Clicked(object sender, EventArgs e)
         {
             try
             {
@@ -81,6 +71,5 @@ namespace ProyectoFinal
             {
                 await DisplayAlert("Alerta", "ERROR: " + e1.Message, "OK");
             }
-        }
+        }*/
     }
-}
