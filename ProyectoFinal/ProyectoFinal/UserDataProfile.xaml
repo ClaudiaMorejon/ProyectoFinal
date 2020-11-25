@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoFinal.UserDataProfile">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="20" Spacing="30" BackgroundColor="Beige">
+
+                <Label Text="Id_Person" />
+                <Entry Placeholder="Ingresar Id_Person" x:Name="idPerson"/>
+
+                <Label Text="Id_User"/>
+                <Entry Placeholder="Ingrese Id_User" x:Name="idUser"/>
+
+                <Label Text="Nombre"/>
+                <Entry Placeholder="Ingrese Nombre" x:Name="Nombre"/>
+
+                <Label Text="Apellido"/>
+                <Entry Placeholder="Ingrese Apellido" x:Name="Apellido"/>
+
+                <Label Text="Celular"/>
+                <Entry Placeholder="Numero Celular" x:Name="Celular"/>
+
+                <Label Text="Convencional"/>
+                <Entry Placeholder="Convencional" x:Name="Convencional"/>
+
+                <Label Text="Direccion"/>
+                <Entry Placeholder="Direccion" x:Name="Direccion"/>
+
+                <Label Text="Ciudad"/>
+                <Entry Placeholder="Ciudad" x:Name="Ciudad"/>
+
+                <Label Text="Imagen"/>
+                <Entry Placeholder="Foto" x:Name="Foto"/>
+
+                <Label Text="Genero"/>
+                <Entry Placeholder="Genero" x:Name="Genero"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
