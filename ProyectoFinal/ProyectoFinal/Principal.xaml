@@ -4,6 +4,9 @@
              x:Class="ProyectoFinal.Principal">
     <ContentPage.Content>
         <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
 
             <ScrollView Grid.Row="0">
         <ListView x:Name="lstPet" HasUnevenRows="True" >
