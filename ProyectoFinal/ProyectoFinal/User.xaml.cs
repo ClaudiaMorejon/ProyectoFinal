@@ -15,7 +15,7 @@ namespace ProyectoFinal
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class User : ContentPage
     {
-                public User()
+       public User()
         {
             InitializeComponent();
         }
@@ -29,11 +29,11 @@ namespace ProyectoFinal
             {
                 WebClient UserProfile = new WebClient();
                 var parametros = new System.Collections.Specialized.NameValueCollection();
-                parametros.Add("idUser", IdUser.Text);
-                parametros.Add("usuario", Usuario.Text);
+                
+                parametros.Add("user_name", Usuario.Text);
                 parametros.Add("password", Password.Text);
 
-                UserProfile.UploadValues("http://134.209.220.83/proyecto/", "Post", parametros);
+                UserProfile.UploadValues("http://134.209.220.83/proyecto/postuser1.php", "POST", parametros);
                 await DisplayAlert("Alerta", "Datos Ingresados", "Ok");
 
             }

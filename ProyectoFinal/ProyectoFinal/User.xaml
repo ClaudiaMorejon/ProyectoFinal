@@ -1,12 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ProyectoFinal.User">
+             x:Class="ProyectoFinal.User"
+             NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
         <ScrollView>
         <StackLayout>
-           <Label Text="idUser" FontSize="15" />
-                <Entry Placeholder="Ingrese IdUser" x:Name="IdUser" FontSize="15"/>
+           <Label Text="Registro Usuarios" FontSize="30" HorizontalOptions="Center"/>
+                
 
                 <Label Text="Usuario" FontSize="15" />
             <Entry Placeholder="Ingrese Usuario" x:Name="Usuario" FontSize="15"/>
