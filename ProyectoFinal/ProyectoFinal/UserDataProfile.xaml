@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoFinal.UserDataProfile">
+    <ContentPage.Content>
+        <ScrollView>
+           
+            <StackLayout Spacing="-4" Padding="-1" HorizontalOptions="Center" BackgroundColor="Beige">
+
+                <Label Text="Registro Usuarios" TextColor="Blue" FontSize="30" HorizontalOptions="Center"/>
+                               
+                <Label Text="Id_Person" FontSize="13"/>
+                <Entry Placeholder="Ingresar Id_Person" x:Name="idPerson" FontSize="10" />
+
+                <Label Text="Id_User" FontSize="13"/>
+                <Entry Placeholder="Ingrese Id_User" x:Name="idUser" FontSize="10"/>
+
+                <Label Text="Nombre" FontSize="13"/>
+                <Entry Placeholder="Ingrese Nombre" x:Name="Nombre" FontSize="10"/>
+
+                <Label Text="Apellido" FontSize="13"/>
+                <Entry Placeholder="Ingrese Apellido" x:Name="Apellido" FontSize="10"/>
+
+                <Label Text="Cedula" FontSize="13"/>
+                <Entry Placeholder="Ingrese Cedula" x:Name="Cedula" FontSize="10"/>
+
+                <Label Text="Celular" FontSize="13"/>
+                <Entry Placeholder="Numero Celular" x:Name="Celular" FontSize="10"/>
+
+                <Label Text="Convencional" FontSize="13"/>
+                <Entry Placeholder="Convencional" x:Name="Convencional" FontSize="10"/>
+
+                <Label Text="Direccion" FontSize="13"/>
+                <Entry Placeholder="Direccion" x:Name="Direccion" FontSize="10"/>
+
+                <Label Text="Ciudad" FontSize="13"/>
+                <Entry Placeholder="Ciudad" x:Name="Ciudad" FontSize="10"/>
+
+                <Label Text="Imagen" FontSize="13"/>
+                <Entry Placeholder="Foto" x:Name="Foto" FontSize="10"/>
+
+                <Label Text="Genero" FontSize="13"/>
+                <Entry Placeholder="Genero" x:Name="Genero" FontSize="10"/>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition>
+                        </ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                <Button  Grid.Row="0" Grid.Column="0" Text="Guardar"
+                        x:Name="btnGuardar"
+                        Clicked="btnGuardar_Clicked"/>
+
+                <Button Grid.Row="0" Grid.Column="1" Text="Regresar"
+                        x:Name="btnRegresar"
+                        Clicked="btnRegresar_Clicked"/>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
