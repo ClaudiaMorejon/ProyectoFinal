@@ -3,8 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProyectoFinal.Principal">
     <ContentPage.Content>
+        <Grid>
 
-        
+            <ScrollView Grid.Row="0">
         <ListView x:Name="lstPet" HasUnevenRows="True" >
             <ListView.ItemTemplate>
                 <DataTemplate>
@@ -24,8 +25,19 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
+        </ScrollView>
 
-     
+      <Button Grid.Row="0" Text="Añadir mascota"
+              Clicked="btn_RegistrarMascota_Clicked"
+              BorderColor="#2b3c3c" BorderWidth="1" 
+              FontAttributes="Bold" BackgroundColor="#4ba862" 
+              BorderRadius="15" TextColor="White" HorizontalOptions="End" 
+              WidthRequest="150" HeightRequest="70" Margin="0,0,20,22" 
+              VerticalOptions="End"/>
+
+       
+
+</Grid>
     </ContentPage.Content>
    
 </ContentPage>
