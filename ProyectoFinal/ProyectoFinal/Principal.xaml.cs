@@ -44,12 +44,11 @@ namespace ProyectoFinal
             
         }
 
-       
-
-
-
+        private void btn_RegistrarMascota_Clicked(object sender, EventArgs e)
+        {
 
         }
+    }
 
         /*private async void btnIngresar_Clicked(object sender, EventArgs e)
         {

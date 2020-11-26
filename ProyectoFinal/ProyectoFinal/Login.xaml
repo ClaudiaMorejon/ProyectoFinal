@@ -17,8 +17,10 @@
             <Button x:Name="btnIngresar" Text="Ingresar" Clicked="btnIngresar_Clicked" BackgroundColor="Cyan"/>
 
             <Button x:Name="btnRegistrar" Text="Registrarse" Clicked="btnRegistrar_Clicked"/>
+            <Button x:Name="btnSeleccionarFoto" Text="Seleccionar imagen" Clicked="btnSeleccionarFoto_Clicked"/>
+            <Image x:Name="Imagen"></Image>
 
-         
+
 
 
 

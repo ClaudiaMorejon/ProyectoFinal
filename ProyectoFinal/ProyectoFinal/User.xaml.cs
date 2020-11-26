@@ -33,7 +33,7 @@ namespace ProyectoFinal
                 parametros.Add("usuario", Usuario.Text);
                 parametros.Add("password", Password.Text);
 
-                UserProfile.UploadValues("http://134.209.220.83/proyecto/", "Post", parametros);
+                UserProfile.UploadValues("http://134.209.220.83/proyecto/post_user.php", "Post", parametros);
                 await DisplayAlert("Alerta", "Datos Ingresados", "Ok");
 
             }
