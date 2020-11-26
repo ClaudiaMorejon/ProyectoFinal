@@ -7,7 +7,7 @@
         <ScrollView>
         <StackLayout>
            <Label Text="idUser" FontSize="15" />
-                <Entry Placeholder="Ingrese IdUser" x:Name="IdUser" FontSize="15"/>
+               
 
                 <Label Text="Usuario" FontSize="15" />
             <Entry Placeholder="Ingrese Usuario" x:Name="Usuario" FontSize="15"/>
