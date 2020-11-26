@@ -15,7 +15,7 @@ namespace ProyectoFinal
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class User : ContentPage
     {
-        public User()
+                public User()
         {
             InitializeComponent();
         }
@@ -33,7 +33,7 @@ namespace ProyectoFinal
                 parametros.Add("usuario", Usuario.Text);
                 parametros.Add("password", Password.Text);
 
-                UserProfile.UploadValues("http://134.209.220.83/proyecto/post_user.php", "Post", parametros);
+                UserProfile.UploadValues("http://134.209.220.83/proyecto/", "Post", parametros);
                 await DisplayAlert("Alerta", "Datos Ingresados", "Ok");
 
             }
@@ -44,8 +44,10 @@ namespace ProyectoFinal
 
         }
 
-        private void btnRegresar_Clicked(object sender, EventArgs e)
+        private async void btnRegresar_Clicked(object sender, EventArgs e)
         {
+
+            await Navigation.PushAsync(new Login());
 
         }
     }

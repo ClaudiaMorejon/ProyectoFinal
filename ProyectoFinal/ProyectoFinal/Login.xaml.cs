@@ -44,9 +44,11 @@ namespace ProyectoFinal
             
         }
 
-        private  void btnRegistrar_Clicked(object sender, EventArgs e)
+        private  async void btnRegistrar_Clicked(object sender, EventArgs e)
         {
-            
+
+            await Navigation.PushAsync(new User());
+
         }
 
         private async void btnSeleccionarFoto_Clicked(object sender, EventArgs e)

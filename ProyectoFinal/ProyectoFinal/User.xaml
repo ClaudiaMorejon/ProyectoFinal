@@ -5,10 +5,10 @@
     <ContentPage.Content>
         <ScrollView>
         <StackLayout>
-            <Label Text="idUser" FontSize="15" />
-            <Entry Placeholder="Ingrese IdUser" x:Name="IdUser" FontSize="15"/>
-            
-            <Label Text="Usuario" FontSize="15" />
+           <Label Text="idUser" FontSize="15" />
+                <Entry Placeholder="Ingrese IdUser" x:Name="IdUser" FontSize="15"/>
+
+                <Label Text="Usuario" FontSize="15" />
             <Entry Placeholder="Ingrese Usuario" x:Name="Usuario" FontSize="15"/>
             
             <Label Text="Password" FontSize="15" />
@@ -29,7 +29,7 @@
                              x:Name="btnGuardar"
                              Clicked="btnGuardar_Clicked"/>
 
-                    <Button  Grid.Row="0" Grid.Column="0" Text="Regresar"
+                    <Button  Grid.Row="0" Grid.Column="1" Text="Regresar"
                             x:Name="btnRegresar"
                              Clicked="btnRegresar_Clicked"/>
 
