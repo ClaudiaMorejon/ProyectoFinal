@@ -9,21 +9,14 @@
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        
-                        <StackLayout Orientation="Horizontal" Spacing="10" HorizontalOptions="End">
-                            
-                            
-                                <StackLayout Orientation="Horizontal">
-                                    <Label Grid.Column="1" Text="{Binding name}" FontSize="Large"/>
-                                <Label Grid.Row="1" Text="{Binding age}" FontSize="Large"/>
-                                <Label Grid.Column="3" Text="{Binding gender}" FontSize="Large"/>
-                                <Label Grid.Column="4" Text="{Binding description}" FontSize="Large"/>
-                               
-                                </StackLayout>
-                                <StackLayout>
-                                    <Image Source="{Binding picture}" WidthRequest="75" HeightRequest="75"/>
-                                </StackLayout>
-                           
+                        <StackLayout Orientation="Horizontal" Padding="10">
+                            <StackLayout Orientation="Horizontal">
+                                <Label Grid.Column="1" Text="{Binding name}"/>
+                                <Label Grid.Column="2" Text="{Binding age}"/>
+                                <Label Grid.Column="3" Text="{Binding gender}"/>
+                                <Label Grid.Column="4" Text="{Binding description}"/>
+                            </StackLayout>
+                            <Image Source="{Binding picture}" WidthRequest="75" HeightRequest="75"/>
 
              
                         </StackLayout>

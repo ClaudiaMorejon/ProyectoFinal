@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Plugin.Media;
 using Plugin.Media.Abstractions;
 using ProyectoFinal.Clases;
+using ProyectoFinal.Utils;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using static System.Net.Mime.MediaTypeNames;
@@ -24,12 +25,15 @@ namespace ProyectoFinal
         {
             try
             {
+                UserData userData = new UserData();
+                var result1 = await userData.getUserData(Convert.ToInt32(Settings.IdUserLogged));
                 UserManager manager = new UserManager();
                 var result = await manager.userLogin(txtUsuario.Text.ToString(),txtClave.Text.ToString());
                 if (result.Count() > 0)
                 {
                     var id_user = result.ElementAt(0).id_user;
                     ProyectoFinal.Utils.Settings.IdUserLogged = id_user.ToString();
+                    await DisplayAlert("Bienvenido(a)", result1.ElementAt(0).name, "Aceptar");
                     await Navigation.PushAsync(new Principal());
                 }
                 else
