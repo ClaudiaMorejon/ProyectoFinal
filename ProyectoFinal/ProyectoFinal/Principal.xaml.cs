@@ -44,12 +44,12 @@ namespace ProyectoFinal
             
         }
 
-       
-
-
-
+        private async void btnRegistroMascota_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new RegistroMascota());
 
         }
+    }
 
         /*private async void btnIngresar_Clicked(object sender, EventArgs e)
         {
