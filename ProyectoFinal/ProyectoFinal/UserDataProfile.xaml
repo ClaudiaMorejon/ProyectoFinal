@@ -3,18 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProyectoFinal.UserDataProfile">
     <ContentPage.Content>
-        <ScrollView>
+        <ScrollView BackgroundColor="Beige">
            
-            <StackLayout Spacing="-4" Padding="-1" HorizontalOptions="Center" BackgroundColor="Beige">
+            <StackLayout Spacing="-3" Padding="30" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Beige">
 
                 <Label Text="Registro Usuarios" TextColor="Blue" FontSize="30" HorizontalOptions="Center"/>
                                
-                <Label Text="Id_Person" FontSize="13"/>
-                <Entry Placeholder="Ingresar Id_Person" x:Name="idPerson" FontSize="10" />
-
-                <Label Text="Id_User" FontSize="13"/>
-                <Entry Placeholder="Ingrese Id_User" x:Name="idUser" FontSize="10"/>
-
+                
                 <Label Text="Nombre" FontSize="13"/>
                 <Entry Placeholder="Ingrese Nombre" x:Name="Nombre" FontSize="10"/>
 
@@ -34,15 +29,15 @@
                 <Entry Placeholder="Direccion" x:Name="Direccion" FontSize="10"/>
 
                 <Label Text="Ciudad" FontSize="13"/>
-                <Entry Placeholder="Ciudad" x:Name="Ciudad" FontSize="10"/>
-
-                <Label Text="Imagen" FontSize="13"/>
-                <Entry Placeholder="Foto" x:Name="Foto" FontSize="10"/>
+                <Entry Placeholder="Ciudad" x:Name="Ciudad" FontSize="10" />
 
                 <Label Text="Genero" FontSize="13"/>
                 <Entry Placeholder="Genero" x:Name="Genero" FontSize="10"/>
 
-                <Grid>
+                <Label Text="Foto" FontSize="13"/>
+                
+                
+                     <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition/>
                     </Grid.RowDefinitions>
@@ -51,11 +46,24 @@
                         <ColumnDefinition>
                         </ColumnDefinition>
                     </Grid.ColumnDefinitions>
-                <Button  Grid.Row="0" Grid.Column="0" Text="Guardar"
+
+                    <Button Text="Foto" FontSize="10"
+                        x:Name="Btnfoto"
+                        Clicked="Btnfoto_Clicked"
+                        Grid.Row="0" Grid.Column="1"
+                        WidthRequest      ="300"
+                        HeightRequest     ="80"
+                        CornerRadius      ="40"
+                        VerticalOptions   ="End"
+                        HorizontalOptions ="End"
+                            />
+                    <Image x:Name="Imagen"/>
+
+                    <Button  Grid.Row="1" Grid.Column="0" Text="Guardar"
                         x:Name="btnGuardar"
                         Clicked="btnGuardar_Clicked"/>
 
-                <Button Grid.Row="0" Grid.Column="1" Text="Regresar"
+                <Button Grid.Row="1" Grid.Column="1" Text="Regresar"
                         x:Name="btnRegresar"
                         Clicked="btnRegresar_Clicked"/>
                 </Grid>

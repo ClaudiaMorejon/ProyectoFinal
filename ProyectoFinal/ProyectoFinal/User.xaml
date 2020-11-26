@@ -33,6 +33,10 @@
                     <Button  Grid.Row="0" Grid.Column="1" Text="Regresar"
                             x:Name="btnRegresar"
                              Clicked="btnRegresar_Clicked"/>
+                    <Button Grid.Row="0" Grid.Column="2"
+                            Text="Perfil"
+                            x:Name="perfil"
+                            Clicked="perfil_Clicked"/>
 
                 </Grid>
             </StackLayout>

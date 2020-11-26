@@ -50,5 +50,12 @@ namespace ProyectoFinal
             await Navigation.PushAsync(new Login());
 
         }
+
+        private async void perfil_Clicked(object sender, EventArgs e)
+        {
+
+            await Navigation.PushAsync(new UserDataProfile());
+
+        }
     }
 }

@@ -6,9 +6,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Net.Http;
 using System.Collections.ObjectModel;
+using Plugin.Media;
+using Plugin.Media.Abstractions;
+using ProyectoFinal.Clases;
+using ProyectoFinal.Utils;
 using System.Net;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using static System.Net.Mime.MediaTypeNames;
 
 
 namespace ProyectoFinal
@@ -29,8 +34,6 @@ namespace ProyectoFinal
 
                 WebClient UserProfile = new WebClient();
                 var parametros = new System.Collections.Specialized.NameValueCollection();
-                parametros.Add("idPerson", idPerson.Text);
-                parametros.Add("idUser", idUser.Text);
                 parametros.Add("nombre", Nombre.Text);
                 parametros.Add("apellido", Apellido.Text);
                 parametros.Add("cedula", Cedula.Text);
@@ -38,7 +41,6 @@ namespace ProyectoFinal
                 parametros.Add("convencional", Convencional.Text );
                 parametros.Add("direccion", Direccion.Text);
                 parametros.Add("ciudad", Ciudad.Text );
-                parametros.Add("imagen", Foto.Text);
                 parametros.Add("genero", Genero.Text);
 
                 UserProfile.UploadValues("http://134.209.220.83/proyecto/", "Post", parametros);
@@ -56,6 +58,31 @@ namespace ProyectoFinal
         {
 
             await Navigation.PushAsync(new Login());
+
+        }
+
+        private async void Btnfoto_Clicked(object sender, EventArgs e)
+        {
+            if (!CrossMedia.Current.IsPickPhotoSupported)
+            {
+                await DisplayAlert("No soporta fotos", ": (Permission is not granted.", "OK");
+                return;
+            }
+            var file = await Plugin.Media.CrossMedia.Current.PickPhotoAsync
+                (new Plugin.Media.Abstractions.PickMediaOptions()
+                {
+                    PhotoSize = Plugin.Media.Abstractions.PhotoSize.Medium,
+                });
+
+            if (file == null)
+                return;
+
+            Imagen.Source = ImageSource.FromStream(() =>
+            {
+                var stream = file.GetStream();
+                file.Dispose();
+                return stream;
+            });
 
         }
     }
