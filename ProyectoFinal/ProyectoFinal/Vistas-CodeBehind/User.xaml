@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoFinal.User"
+             NavigationPage.HasNavigationBar="False"
+              BackgroundColor="White">
+    
+    <ContentPage.Content>
+        <ScrollView>
+          
+           
+                <Grid RowSpacing="{OnPlatform iOS=25,Android=20}">
+                    <Grid.RowDefinitions>
+                       
+                        
+                        
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                <Label Text="Registro usuarios" TextColor="#b60042" FontSize="25" HorizontalTextAlignment="Center">
+
+                </Label>
+
+
+                <StackLayout Grid.Row="1" HorizontalOptions="Center" WidthRequest="{OnPlatform Android=400}" Orientation="Vertical">
+
+                 <Frame
+                     HasShadow="{OnPlatform Android=true,iOS=false}"
+                     Padding="{OnPlatform Android=6,iOS=0}"
+                     CornerRadius="{OnPlatform Android=7}">
+                <Entry Placeholder="Ingrese Usuario" x:Name="txtUsuario" FontSize="22"/>
+                </Frame>
+                </StackLayout>
+               
+
+                <StackLayout Grid.Row="2" HorizontalOptions="Center" WidthRequest="{OnPlatform Android=400}" Orientation="Vertical">
+                    <Frame
+                     HasShadow="{OnPlatform Android=true,iOS=false}"
+                     Padding="{OnPlatform Android=6,iOS=0}"
+                     CornerRadius="{OnPlatform Android=7}">
+                        <Entry Placeholder="Ingrese la clave" IsPassword="True" x:Name="txtClave" FontSize="22"/>
+                    </Frame>
+                </StackLayout>
+
+
+
+                <StackLayout Grid.Row="3" HorizontalOptions="Center" WidthRequest="{OnPlatform Android=400}" Orientation="Vertical">
+                    <Frame
+                     HasShadow="{OnPlatform Android=true,iOS=false}"
+                     Padding="{OnPlatform Android=6,iOS=0}"
+                     CornerRadius="{OnPlatform Android=7}">
+                      
+                <Entry Placeholder="Ingrese Nombre" x:Name="txtNombre" FontSize="22"/>
+                    </Frame>
+                </StackLayout>
+
+                <StackLayout Grid.Row="4" HorizontalOptions="Center" WidthRequest="{OnPlatform Android=400}" Orientation="Vertical">
+                <Frame
+                     HasShadow="{OnPlatform Android=true,iOS=false}"
+                     Padding="{OnPlatform Android=6,iOS=0}"
+                     CornerRadius="{OnPlatform Android=7}">
+                    <Entry Placeholder="Ingrese Apellido" x:Name="txtApellido" FontSize="22"/>
+                </Frame>
+                </StackLayout>
+
+                <StackLayout Grid.Row="5"  HorizontalOptions="Center" WidthRequest="{OnPlatform Android=400}" Orientation="Vertical" >
+                    <Frame
+                     HasShadow="{OnPlatform Android=true,iOS=false}"
+                     Padding="{OnPlatform Android=6,iOS=0}"
+                     CornerRadius="{OnPlatform Android=7}">
+                        <Entry Placeholder="Ingrese Cedula" x:Name="txtCedula" FontSize="22" MaxLength="10"/>
+                </Frame>
+                </StackLayout>
+
+                <StackLayout Grid.Row="6"  HorizontalOptions="Center" WidthRequest="{OnPlatform Android=400}" Orientation="Vertical" >
+                    <Frame
+                     HasShadow="{OnPlatform Android=true,iOS=false}"
+                     Padding="{OnPlatform Android=6,iOS=0}"
+                     CornerRadius="{OnPlatform Android=7}">
+                        <Entry Placeholder="Numero Celular" x:Name="txtCelular" FontSize="22"/>
+                </Frame>
+                </StackLayout>
+
+
+                <StackLayout Grid.Row="7"  HorizontalOptions="Center" WidthRequest="{OnPlatform Android=400}" Orientation="Vertical" >
+                    <Frame
+                     HasShadow="{OnPlatform Android=true,iOS=false}"
+                     Padding="{OnPlatform Android=6,iOS=0}"
+                     CornerRadius="{OnPlatform Android=7}">
+                        <Entry Placeholder="Convencional" x:Name="txtConvencional" FontSize="22"/>
+                </Frame>
+                </StackLayout>
+
+
+
+
+                <StackLayout Grid.Row="8"  HorizontalOptions="Center" WidthRequest="{OnPlatform Android=400}" Orientation="Vertical" >
+                    <Frame
+                     HasShadow="{OnPlatform Android=true,iOS=false}"
+                     Padding="{OnPlatform Android=6,iOS=0}"
+                     CornerRadius="{OnPlatform Android=7}">
+                        <Entry Placeholder="Direccion" x:Name="txtDireccion" FontSize="22"/>
+                    </Frame>
+                </StackLayout>
+
+
+                <StackLayout Grid.Row="9"  HorizontalOptions="Center" WidthRequest="{OnPlatform Android=400}" Orientation="Vertical" >
+                <Frame
+                     HasShadow="{OnPlatform Android=true,iOS=false}"
+                     Padding="{OnPlatform Android=6,iOS=0}"
+                     CornerRadius="{OnPlatform Android=7}">
+                    <Entry Placeholder="Genero" x:Name="txtGenero" FontSize="22"/>
+                </Frame>
+                </StackLayout>
+
+
+
+                <StackLayout Grid.Row="10"  HorizontalOptions="Center" WidthRequest="{OnPlatform Android=400}"  HeightRequest="50" Orientation="Vertical" >
+                    <Button  Text="Guardar"
+                             x:Name="btnGuardar"
+                             Clicked="btnGuardar_Clicked"
+                             BackgroundColor="#3897f0"
+                             TextColor="White"/>
+                    </StackLayout>
+
+                <StackLayout Grid.Row="11"  HorizontalOptions="Center" WidthRequest="{OnPlatform Android=400}" Orientation="Vertical" >
+
+                <Button   Text="Regresar"
+                            x:Name="btnRegresar"
+                             Clicked="btnRegresar_Clicked"
+                            Background="#b60042"
+                          TextColor="White"/>
+                </StackLayout>
+
+
+            </Grid>
+            
+             </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

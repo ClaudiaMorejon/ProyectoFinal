@@ -55,7 +55,7 @@ namespace ProyectoFinal
 
         }
 
-        private async void btnSeleccionarFoto_Clicked(object sender, EventArgs e)
+        /*private async void btnSeleccionarFoto_Clicked(object sender, EventArgs e)
         {
             if (!CrossMedia.Current.IsPickPhotoSupported)
             {
@@ -76,6 +76,6 @@ namespace ProyectoFinal
                 file.Dispose();
                 return stream;
             });
-        }
+        }*/
     }
 }

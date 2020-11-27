@@ -27,22 +27,22 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Login.xaml">
+    <EmbeddedResource Update="Vistas-CodeBehind\Login.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Menu.xaml">
+    <EmbeddedResource Update="Vistas-CodeBehind\Menu.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="PetProfile.xaml">
+    <EmbeddedResource Update="Vistas-CodeBehind\PetProfile.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Principal.xaml">
+    <EmbeddedResource Update="Vistas-CodeBehind\Principal.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="User.xaml">
+    <EmbeddedResource Update="Vistas-CodeBehind\User.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="UserDataProfile.xaml">
+    <EmbeddedResource Update="Vistas-CodeBehind\UserDataProfile.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProyectoFinal.Principal">
+
     <ContentPage.Content>
         <Grid>
             <Grid.RowDefinitions>
@@ -33,7 +34,7 @@
       <Button Grid.Row="0" Text="Añadir mascota"
               Clicked="btn_RegistrarMascota_Clicked"
               BorderColor="#2b3c3c" BorderWidth="1" 
-              FontAttributes="Bold" BackgroundColor="#4ba862" 
+              FontAttributes="Bold" BackgroundColor="#b60042" 
               BorderRadius="15" TextColor="White" HorizontalOptions="End" 
               WidthRequest="150" HeightRequest="70" Margin="0,0,20,22" 
               VerticalOptions="End"/>
