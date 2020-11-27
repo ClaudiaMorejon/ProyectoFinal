@@ -6,7 +6,7 @@
     <ContentPage.Content>
         <ScrollView>
         <StackLayout>
-                <Label Text="Regitro de Usuarios" FontSize="30" HorizontalOptions="Center" TextColor="Black"/>
+                <Label Text="Regitro de Usuarios" FontSize="30" HorizontalOptions="Center" />
 
                 <Label Text="Usuario" FontSize="15" />
             <Entry Placeholder="Ingrese Usuario" x:Name="Usuario" FontSize="15"/>
