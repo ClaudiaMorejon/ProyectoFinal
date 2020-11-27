@@ -34,5 +34,54 @@ namespace ProyectoFinal.Clases
             }
             return Enumerable.Empty<UserDataProfile>();
         }
+
+        public async Task<User> setUserData(String user_name, String password)
+        {
+            HttpClient cliente = getClient();
+
+            var parameters = new Dictionary<string, string> { { "user_name", user_name }, { "password", password } };
+            var encodedContent = new FormUrlEncodedContent(parameters);
+
+            var response = await cliente.PostAsync(URL + "post_user.php", encodedContent);
+            
+            if (response.IsSuccessStatusCode)
+            {
+                
+                string content = await response.Content.ReadAsStringAsync();
+
+                return JsonConvert.DeserializeObject<User>(content);
+
+            }
+            return null;
+        }
+
+        public async Task<UserDataProfile> setUserDataProfile(string id_user, String name, String last_name, String identifier, String cell_phone, String home_phone, String address, String gender)
+        {
+            HttpClient cliente = getClient();
+
+            var parameters = new Dictionary<string, string> 
+            { { "id_user", id_user }, 
+                { "name", name },
+                { "last_name", last_name },
+                { "identifier", identifier },
+                { "cell_phone", cell_phone },
+                { "home_phone", home_phone },
+                { "address", address },
+                { "gender", gender } };
+            var encodedContent = new FormUrlEncodedContent(parameters);
+
+            var response = await cliente.PostAsync(URL + "post_person.php", encodedContent);
+
+            if (response.IsSuccessStatusCode)
+            {
+
+                string content = await response.Content.ReadAsStringAsync();
+
+                return JsonConvert.DeserializeObject<UserDataProfile>(content);
+
+            }
+            return null;
+        }
+
     }
 }

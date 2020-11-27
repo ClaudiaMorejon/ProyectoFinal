@@ -5,15 +5,37 @@
              NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
         <ScrollView>
-        <StackLayout>
-           <Label Text="idUser" FontSize="15" />
-               
+            <StackLayout>
+
 
                 <Label Text="Usuario" FontSize="15" />
-            <Entry Placeholder="Ingrese Usuario" x:Name="Usuario" FontSize="15"/>
+                <Entry Placeholder="Ingrese Usuario" x:Name="txtUsuario" FontSize="22"/>
             
-            <Label Text="Password" FontSize="15" />
-            <Entry Placeholder="Ingrese Password" IsPassword="True" x:Name="Password" FontSize="15"/>
+                <Label Text="Password" FontSize="15" />
+                <Entry Placeholder="Ingrese Password" IsPassword="True" x:Name="txtClave" FontSize="22"/>
+
+                <Label Text="Nombre" FontSize="13"/>
+                <Entry Placeholder="Ingrese Nombre" x:Name="txtNombre" FontSize="22"/>
+
+                <Label Text="Apellido" FontSize="13"/>
+                <Entry Placeholder="Ingrese Apellido" x:Name="txtApellido" FontSize="22"/>
+
+                <Label Text="Cedula" FontSize="13"/>
+                <Entry Placeholder="Ingrese Cedula" x:Name="txtCedula" FontSize="10" MaxLength="22"/>
+
+                <Label Text="Celular" FontSize="13"/>
+                <Entry Placeholder="Numero Celular" x:Name="txtCelular" FontSize="22"/>
+
+                <Label Text="Convencional" FontSize="13"/>
+                <Entry Placeholder="Convencional" x:Name="txtConvencional" FontSize="22"/>
+
+                <Label Text="Direccion" FontSize="13"/>
+                <Entry Placeholder="Direccion" x:Name="txtDireccion" FontSize="22"/>
+
+                <Label Text="Genero" FontSize="13"/>
+                <Entry Placeholder="Genero" x:Name="txtGenero" FontSize="22"/>
+
+
 
                 <Grid>
                     
