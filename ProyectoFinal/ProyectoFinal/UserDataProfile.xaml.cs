@@ -34,14 +34,14 @@ namespace ProyectoFinal
 
                 WebClient UserProfile = new WebClient();
                 var parametros = new System.Collections.Specialized.NameValueCollection();
-                parametros.Add("nombre", Nombre.Text);
-                parametros.Add("apellido", Apellido.Text);
-                parametros.Add("cedula", Cedula.Text);
-                parametros.Add("celular", Celular.Text );
-                parametros.Add("convencional", Convencional.Text );
-                parametros.Add("direccion", Direccion.Text);
-                parametros.Add("ciudad", Ciudad.Text );
-                parametros.Add("genero", Genero.Text);
+                parametros.Add("name", name.Text);
+                parametros.Add("last_name", last_name.Text);
+                parametros.Add("identifier", identifier.Text);
+                parametros.Add("cell_phone", cell_phone.Text);
+                parametros.Add("home_phone",home_phone.Text);
+                parametros.Add("address", address.Text);
+                parametros.Add("id_city", id_city.Text);
+                parametros.Add("gender",gender.Text);
 
                 UserProfile.UploadValues("http://134.209.220.83/proyecto/personPut.php", "Post", parametros);
                 await DisplayAlert("Alerta", "Datos Ingresados", "Ok");
