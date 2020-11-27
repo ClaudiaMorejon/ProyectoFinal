@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProyectoFinal.UserDataProfile">
     <ContentPage.Content>
+        
         <ScrollView BackgroundColor="Beige">
            
             <StackLayout Spacing="-3" Padding="30" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Beige">
@@ -17,7 +18,7 @@
                 <Entry Placeholder="Ingrese Apellido" x:Name="Apellido" FontSize="10"/>
 
                 <Label Text="Cedula" FontSize="13"/>
-                <Entry Placeholder="Ingrese Cedula" x:Name="Cedula" FontSize="10"/>
+                <Entry Placeholder="Ingrese Cedula" x:Name="Cedula" FontSize="10" MaxLength="10"/>
 
                 <Label Text="Celular" FontSize="13"/>
                 <Entry Placeholder="Numero Celular" x:Name="Celular" FontSize="10"/>
@@ -57,15 +58,23 @@
                         VerticalOptions   ="End"
                         HorizontalOptions ="End"
                             />
-                    <Image x:Name="Imagen"/>
+                    <Image x:Name="Imagen" Scale="-1" Grid.Row="0" Grid.Column="0"/>
 
                     <Button  Grid.Row="1" Grid.Column="0" Text="Guardar"
                         x:Name="btnGuardar"
-                        Clicked="btnGuardar_Clicked"/>
+                        Clicked="btnGuardar_Clicked"
+                             WidthRequest      ="300"
+                        HeightRequest     ="60"
+                             VerticalOptions   ="End"
+                        HorizontalOptions ="End"/>
 
                 <Button Grid.Row="1" Grid.Column="1" Text="Regresar"
                         x:Name="btnRegresar"
-                        Clicked="btnRegresar_Clicked"/>
+                        Clicked="btnRegresar_Clicked"
+                        WidthRequest      ="300"
+                        HeightRequest     ="60"
+                        VerticalOptions   ="End"
+                        HorizontalOptions ="End"/>
                 </Grid>
             </StackLayout>
         </ScrollView>

@@ -43,7 +43,7 @@ namespace ProyectoFinal
                 parametros.Add("ciudad", Ciudad.Text );
                 parametros.Add("genero", Genero.Text);
 
-                UserProfile.UploadValues("http://134.209.220.83/proyecto/", "Post", parametros);
+                UserProfile.UploadValues("http://134.209.220.83/proyecto/personPut.php", "Post", parametros);
                 await DisplayAlert("Alerta", "Datos Ingresados", "Ok");
             }
             catch (Exception ex)
