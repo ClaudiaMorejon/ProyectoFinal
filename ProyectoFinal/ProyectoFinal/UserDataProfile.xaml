@@ -6,37 +6,37 @@
         
         <ScrollView BackgroundColor="Beige">
            
-            <StackLayout Spacing="-3" Padding="30" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Beige">
+            <StackLayout Spacing="-4" Padding="5" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Beige">
 
                 <Label Text="Registro Usuarios" TextColor="Blue" FontSize="30" HorizontalOptions="Center"/>
-                               
-                
+
+
                 <Label Text="Nombre" FontSize="13"/>
-                <Entry Placeholder="Ingrese Nombre" x:Name="Nombre" FontSize="10"/>
+                <Entry Placeholder="Ingrese Nombre" x:Name="name" FontSize="13"/>
 
                 <Label Text="Apellido" FontSize="13"/>
-                <Entry Placeholder="Ingrese Apellido" x:Name="Apellido" FontSize="10"/>
+                <Entry Placeholder="Ingrese Apellido" x:Name="last_name" FontSize="13"/>
 
                 <Label Text="Cedula" FontSize="13"/>
-                <Entry Placeholder="Ingrese Cedula" x:Name="Cedula" FontSize="10" MaxLength="10"/>
+                <Entry Placeholder="Ingrese Cedula" x:Name="identifier" FontSize="10" MaxLength="13"/>
 
                 <Label Text="Celular" FontSize="13"/>
-                <Entry Placeholder="Numero Celular" x:Name="Celular" FontSize="10"/>
+                <Entry Placeholder="Numero Celular" x:Name="cell_phone" FontSize="13"/>
 
                 <Label Text="Convencional" FontSize="13"/>
-                <Entry Placeholder="Convencional" x:Name="Convencional" FontSize="10"/>
+                <Entry Placeholder="Convencional" x:Name="home_phone" FontSize="13"/>
 
                 <Label Text="Direccion" FontSize="13"/>
-                <Entry Placeholder="Direccion" x:Name="Direccion" FontSize="10"/>
+                <Entry Placeholder="Direccion" x:Name="address" FontSize="13"/>
 
                 <Label Text="Ciudad" FontSize="13"/>
-                <Entry Placeholder="Ciudad" x:Name="Ciudad" FontSize="10" />
+                <Entry Placeholder="Ciudad" x:Name="id_city" FontSize="13" />
 
                 <Label Text="Genero" FontSize="13"/>
-                <Entry Placeholder="Genero" x:Name="Genero" FontSize="10"/>
+                <Entry Placeholder="Genero" x:Name="gender" FontSize="13"/>
 
                 <Label Text="Foto" FontSize="13"/>
-                
+                                            
                 
                      <Grid>
                     <Grid.RowDefinitions>

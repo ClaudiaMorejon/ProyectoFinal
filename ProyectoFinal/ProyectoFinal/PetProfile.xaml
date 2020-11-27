@@ -3,10 +3,31 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProyectoFinal.PetProfile">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <ScrollView>
+        <StackLayout Spacing="1" HorizontalOptions="Center" VerticalOptions="Center" Padding="25">
+          
+                              
+            <Label Text="REGISTRO NUEVO DE MASCOTA" HorizontalOptions="Center" TextColor="BlueViolet" FontSize="20"/>
+                            
+            <Label Text="NOMBRE: " FontSize="14" TextColor="Black"/>
+            <Entry x:Name="txtNombreMas" Placeholder="NOMBRE DE LA MASCOTA " FontSize="12"/>
+                <Label Text="EDAD: " FontSize="14" TextColor="Black"/>
+            <Entry x:Name="txtEdadMas" Placeholder="EDAD DE LA MASCOTA" FontSize="12"/>
+                <Label Text="GENERO: " FontSize="14" TextColor="Black"/>
+            <Entry x:Name="txtGeneroMas" Placeholder="GENERO DE LA MASCOTA" FontSize="12"/>
+                <Label Text="DESCRIPCION: " FontSize="14" TextColor="Black"/>
+            <Entry x:Name="txtDescripcion" Placeholder="DESCRIPCION DE MASCOTA" FontSize="12"/>
+                <Label Text="TAMAÑO: " FontSize="14" TextColor="Black"/>
+            <Entry x:Name="txtTamanioMas" Placeholder="TAMAÑO DE LA MASCOTA" FontSize="12"/>
+                <Label Text="RAZA: " FontSize="14" TextColor="Black"/>
+            <Entry x:Name="txtRaz" Placeholder="RAZA DE LA MASCOTA" FontSize="12"/>
+                <Label Text="ESTADO: " FontSize="14" TextColor="Black"/>
+            <Entry x:Name="txtEstado" Placeholder="ESTADO DE MASCOTA" FontSize="12"/>
+                <ImageButton Source="http://content.vivaair.com/Upload-FC/Co/logos-iconos/10-%20recomendaciones-para-que-mi-mascota-viaje-en-viva-air.svg"/>
+                <Button x:Name="btnGurdar" Text="GUARDAR"/>
+           
+
         </StackLayout>
+      </ScrollView>
     </ContentPage.Content>
 </ContentPage>
