@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using ProyectoFinal.Clases;
 using ProyectoFinal.Utils;
+using ProyectoFinal.Vistas_CodeBehind;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -58,7 +59,7 @@ namespace ProyectoFinal
             int ID = Convert.ToInt32(id_user);
             try
             {
-                Navigation.PushAsync(new Elemento(ID));
+                Navigation.PushAsync(new PetDetail(ID,PET));
             }
             catch (Exception)
             {

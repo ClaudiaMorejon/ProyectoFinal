@@ -12,9 +12,12 @@ namespace ProyectoFinal.Vistas_CodeBehind
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class PetDetail : ContentPage
     {
-        public PetDetail()
+        public PetDetail(int id_user, int id_pet)
         {
             InitializeComponent();
         }
+
+
+
     }
 }

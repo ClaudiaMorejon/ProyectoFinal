@@ -6,8 +6,7 @@
         <Grid>
 
             <ScrollView >
-                <ListView ItemSelected="OnSelection" ItemsSource="{Binding PetDataAll}" 
-                          x:Name="lstPet" HasUnevenRows="True" Margin="40,80" >
+                <ListView x:Name="petDetail" HasUnevenRows="True" Margin="40,80" >
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
