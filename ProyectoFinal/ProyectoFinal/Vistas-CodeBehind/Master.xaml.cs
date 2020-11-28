@@ -10,11 +10,20 @@ using Xamarin.Forms.Xaml;
 namespace ProyectoFinal.Vistas_CodeBehind
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class MasterPage : ContentPage
+    public partial class Master : ContentPage
     {
-        public MasterPage()
+        public Master()
         {
             InitializeComponent();
         }
+
+        private async void btnAgregar_Clicked(object sender, EventArgs e)
+        {
+            App.MasterD.IsPresented = false;
+            await App.MasterD.Detail.Navigation.PushAsync(new PetProfile());
+        }
+
     }
-}
+    }
+
+

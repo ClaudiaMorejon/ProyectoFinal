@@ -7,24 +7,25 @@
         <StackLayout Spacing="1" HorizontalOptions="Center" VerticalOptions="Center" Padding="25">
           
                               
-            <Label Text="REGISTRO NUEVO DE MASCOTA" HorizontalOptions="Center" TextColor="BlueViolet" FontSize="20"/>
+            <Label Text="REGISTRO NUEVO DE MASCOTA" HorizontalOptions="Center" FontSize="26"/>
                             
             <Label Text="NOMBRE: " FontSize="14" TextColor="Black"/>
-            <Entry x:Name="txtNombreMas" Placeholder="NOMBRE DE LA MASCOTA " FontSize="12"/>
+            <Entry x:Name="txtNombreMas" Placeholder="NOMBRE DE LA MASCOTA " FontSize="22"/>
                 <Label Text="EDAD: " FontSize="14" TextColor="Black"/>
-            <Entry x:Name="txtEdadMas" Placeholder="EDAD DE LA MASCOTA" FontSize="12"/>
+            <Entry x:Name="txtEdadMas" Placeholder="EDAD DE LA MASCOTA" FontSize="22"/>
                 <Label Text="GENERO: " FontSize="14" TextColor="Black"/>
-            <Entry x:Name="txtGeneroMas" Placeholder="GENERO DE LA MASCOTA" FontSize="12"/>
+            <Entry x:Name="txtGeneroMas" Placeholder="GENERO DE LA MASCOTA" FontSize="22"/>
                 <Label Text="DESCRIPCION: " FontSize="14" TextColor="Black"/>
-            <Entry x:Name="txtDescripcion" Placeholder="DESCRIPCION DE MASCOTA" FontSize="12"/>
+            <Entry x:Name="txtDescripcion" Placeholder="DESCRIPCION DE MASCOTA" FontSize="22"/>
                 <Label Text="TAMAÑO: " FontSize="14" TextColor="Black"/>
-            <Entry x:Name="txtTamanioMas" Placeholder="TAMAÑO DE LA MASCOTA" FontSize="12"/>
+            <Entry x:Name="txtTamanioMas" Placeholder="TAMAÑO DE LA MASCOTA" FontSize="22"/>
                 <Label Text="RAZA: " FontSize="14" TextColor="Black"/>
-            <Entry x:Name="txtRaz" Placeholder="RAZA DE LA MASCOTA" FontSize="12"/>
+            <Entry x:Name="txtRaz" Placeholder="RAZA DE LA MASCOTA" FontSize="22"/>
                 <Label Text="ESTADO: " FontSize="14" TextColor="Black"/>
-            <Entry x:Name="txtEstado" Placeholder="ESTADO DE MASCOTA" FontSize="12"/>
-                <ImageButton Source="http://content.vivaair.com/Upload-FC/Co/logos-iconos/10-%20recomendaciones-para-que-mi-mascota-viaje-en-viva-air.svg"/>
-                <Button x:Name="btnGurdar" Text="GUARDAR"/>
+            <Entry x:Name="txtColor" Placeholder="COLOR DE LA MASCOTA" FontSize="22"/>
+                <Label Text="COLOR: " FontSize="14" TextColor="Black"/>
+            
+            <Button x:Name="btnGurdar" Text="GUARDAR" Clicked="btnGuardar_Clicked"/>
            
 
         </StackLayout>

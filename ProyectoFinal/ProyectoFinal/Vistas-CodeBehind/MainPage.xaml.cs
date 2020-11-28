@@ -8,11 +8,15 @@ using Xamarin.Forms;
 
 namespace ProyectoFinal
 {
-    public partial class MainPage : ContentPage
+    public partial class MainPage : MasterDetailPage
     {
         public MainPage()
         {
             InitializeComponent();
+            this.Master = new Vistas_CodeBehind.Master();
+            this.Detail = new NavigationPage(new Principal());
+
+            App.MasterD = this;
         }
     }
 }

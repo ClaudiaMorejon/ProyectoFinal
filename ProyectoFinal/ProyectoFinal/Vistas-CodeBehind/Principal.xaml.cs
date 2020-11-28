@@ -49,28 +49,25 @@ namespace ProyectoFinal
              await Navigation.PushAsync(new PetProfile());
         }
 
-       
-    }
-
-        /*private async void btnIngresar_Clicked(object sender, EventArgs e)
+        void OnSelection(object sender, SelectedItemChangedEventArgs e)
         {
+            var obj = (PetDataAll)e.SelectedItem;
+            var id_pet = obj.id_pet.ToString();
+            var id_user = obj.id_pet.ToString();
+            int PET = Convert.ToInt32(id_pet);
+            int ID = Convert.ToInt32(id_user);
             try
             {
-                
-                UserData userData = new UserData();
-                var result = await userData.getUserData(Convert.ToInt32(Settings.IdUserLogged));
-                if (result.Count() > 0)
-                {
-                    await DisplayAlert("Success", result.ElementAt(0).name, "Aceptar", "Cancelar");
-                }
-                else
-                {
-                    await DisplayAlert("Error", "Usuario o clave incorrecta", "Aceptar", "Cancelar");
-                }
+                Navigation.PushAsync(new Elemento(ID));
             }
-            catch (Exception e1)
+            catch (Exception)
             {
-                await DisplayAlert("Alerta", "ERROR: " + e1.Message, "OK");
+                throw;
             }
-        }*/
+        }
+
+
     }
+
+    
+}

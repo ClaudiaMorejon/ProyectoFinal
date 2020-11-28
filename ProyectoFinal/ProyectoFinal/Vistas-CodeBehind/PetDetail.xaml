@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoFinal.Vistas_CodeBehind.PetDetail">
+    <ContentPage.Content>
+        <Grid>
+
+            <ScrollView >
+                <ListView ItemSelected="OnSelection" ItemsSource="{Binding PetDataAll}" 
+                          x:Name="lstPet" HasUnevenRows="True" Margin="40,80" >
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Orientation="Horizontal" Padding="10">
+
+                                    <Frame HasShadow="{OnPlatform Android=true,iOS=false}"
+                                 Padding="{OnPlatform Android=6,iOS=0}"
+                                 CornerRadius="{OnPlatform Android=7}">
+                                        <StackLayout Padding="8,8,8,8">
+                                            <StackLayout Orientation="Horizontal">
+                                                <Label Text="Nombre: " FontAttributes="Bold" TextColor="Black"/>
+                                                <Label Text="{Binding pet_name}"/>
+                                            </StackLayout>
+                                            <StackLayout Orientation="Horizontal">
+                                                <Label Text="Edad: " FontAttributes="Bold" TextColor="Black"/>
+                                                <Label Text="{Binding age}"/>
+                                                <Label Text="    Gen: " FontAttributes="Bold" TextColor="Black"/>
+                                                <Label Text="{Binding gender}"/>
+                                                <Label Text="    Color: " FontAttributes="Bold" TextColor="Black"/>
+                                                <Label Text="{Binding color}"/>
+                                            </StackLayout>
+                                            <StackLayout Orientation="Horizontal">
+                                                <Label Text="Tamaño: " FontAttributes="Bold" TextColor="Black"/>
+                                                <Label Text="{Binding size}"/>
+                                                <Label Text="    Raza: " FontAttributes="Bold" TextColor="Black"/>
+                                                <Label Text="{Binding breed}"/>
+                                            </StackLayout>
+                                            <Label Text="Descripción: " FontAttributes="Bold" TextColor="Black"/>
+                                            <Label Text="{Binding description}"/>
+                                            <Label Text="Datos del Propietario: " FontAttributes="Bold" TextColor="Black"/>
+                                            <StackLayout Orientation="Horizontal">
+                                                <Label Text="Nombre: " FontAttributes="Bold" TextColor="Black"/>
+                                                <Label Text="{Binding name}"/>
+                                                <Label Text="{Binding last_name}"/>
+                                            </StackLayout>
+                                            <StackLayout Orientation="Horizontal">
+                                                <Label Text="Celular: " FontAttributes="Bold" TextColor="Black"/>
+                                                <Label Text="{Binding cell_phone}"/>
+                                                <Label Text="Fijo: " FontAttributes="Bold" TextColor="Black"/>
+                                                <Label Text="{Binding home_phone}"/>
+                                            </StackLayout>
+
+                                        </StackLayout>
+                                    </Frame>
+
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </ScrollView>
+
+            <Button Grid.Row="0" Text="Añadir mascota"
+              Clicked="btn_RegistrarMascota_Clicked"
+              BorderColor="#2b3c3c" BorderWidth="1" 
+              FontAttributes="Bold" BackgroundColor="#b60042" 
+              BorderRadius="15" TextColor="White" HorizontalOptions="End" 
+              WidthRequest="150" HeightRequest="70" Margin="0,0,20,22" 
+              VerticalOptions="End"/>
+
+
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

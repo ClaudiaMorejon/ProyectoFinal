@@ -5,6 +5,8 @@ using System.Net.Http;
 using Newtonsoft.Json;
 using System.Threading.Tasks;
 using System.Linq;
+using System.Collections.ObjectModel;
+
 namespace ProyectoFinal.Clases
 {
     public class UserManager
@@ -34,16 +36,18 @@ namespace ProyectoFinal.Clases
             return Enumerable.Empty<User>(); 
         }
 
-        public async Task<IEnumerable<PetData>> listarMascotas()
+        public async Task<IEnumerable<PetDataAll>> listarMascotas()
         {
             HttpClient client = getClient();
-            var result = await client.GetAsync(URL + "getPet.php");
+
+            var result = await client.GetAsync(URL + "getPetUser.php");
+            
             if (result.IsSuccessStatusCode)
             {
                 string content = await result.Content.ReadAsStringAsync();
-                return JsonConvert.DeserializeObject<IEnumerable<PetData>>(content);
+                return JsonConvert.DeserializeObject<IEnumerable<PetDataAll>>(content);
             }
-            return Enumerable.Empty<PetData>();
+            return Enumerable.Empty<PetDataAll>();
             
         }
 
