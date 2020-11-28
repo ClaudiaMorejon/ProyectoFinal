@@ -25,7 +25,7 @@
             <Entry x:Name="txtColor" Placeholder="COLOR DE LA MASCOTA" FontSize="22"/>
                 <Label Text="COLOR: " FontSize="14" TextColor="Black"/>
             
-            <Button x:Name="btnGurdar" Text="GUARDAR" Clicked="btnGuardar_Clicked"/>
+             <Button x:Name="btnGurdar" Text="GUARDAR" Clicked="btnGuardar_Clicked"/>
            
 
         </StackLayout>

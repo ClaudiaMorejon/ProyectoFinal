@@ -59,7 +59,7 @@ namespace ProyectoFinal
             int ID = Convert.ToInt32(id_user);
             try
             {
-                Navigation.PushAsync(new PetDetail(ID,PET));
+                Navigation.PushAsync(new UpadatePet(ID,PET));
             }
             catch (Exception)
             {
